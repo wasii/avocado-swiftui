@@ -11,6 +11,8 @@
 		C664496A2824FCB7000F1649 /* RipeningStagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66449692824FCB7000F1649 /* RipeningStagesView.swift */; };
 		C664496C2824FCC4000F1649 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C664496B2824FCC4000F1649 /* SettingsView.swift */; };
 		C664496E2824FCDF000F1649 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C664496D2824FCDF000F1649 /* AppView.swift */; };
+		C6644970282524D4000F1649 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C664496F282524D4000F1649 /* HeaderView.swift */; };
+		C664497228252A16000F1649 /* HeaderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C664497128252A16000F1649 /* HeaderModel.swift */; };
 		C673E67A2824F6D100F0DD24 /* AvacadosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C673E6792824F6D100F0DD24 /* AvacadosApp.swift */; };
 		C673E67C2824F6D100F0DD24 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C673E67B2824F6D100F0DD24 /* ContentView.swift */; };
 		C673E67E2824F6D300F0DD24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C673E67D2824F6D300F0DD24 /* Assets.xcassets */; };
@@ -22,6 +24,8 @@
 		C66449692824FCB7000F1649 /* RipeningStagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RipeningStagesView.swift; sourceTree = "<group>"; };
 		C664496B2824FCC4000F1649 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		C664496D2824FCDF000F1649 /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
+		C664496F282524D4000F1649 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		C664497128252A16000F1649 /* HeaderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderModel.swift; sourceTree = "<group>"; };
 		C673E6762824F6D100F0DD24 /* Avacados.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Avacados.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C673E6792824F6D100F0DD24 /* AvacadosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvacadosApp.swift; sourceTree = "<group>"; };
 		C673E67B2824F6D100F0DD24 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -50,6 +54,7 @@
 		C66449652824FC62000F1649 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				C664497128252A16000F1649 /* HeaderModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -62,6 +67,7 @@
 				C66449692824FCB7000F1649 /* RipeningStagesView.swift */,
 				C664496B2824FCC4000F1649 /* SettingsView.swift */,
 				C664496D2824FCDF000F1649 /* AppView.swift */,
+				C664496F282524D4000F1649 /* HeaderView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -179,6 +185,8 @@
 				C66449682824FC80000F1649 /* AvocadoView.swift in Sources */,
 				C673E67A2824F6D100F0DD24 /* AvacadosApp.swift in Sources */,
 				C664496C2824FCC4000F1649 /* SettingsView.swift in Sources */,
+				C664497228252A16000F1649 /* HeaderModel.swift in Sources */,
+				C6644970282524D4000F1649 /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

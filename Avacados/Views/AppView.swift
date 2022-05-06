@@ -32,8 +32,13 @@ struct AppView: View {
                 }
         }
         
-        .ignoresSafeArea(.all, edges: .all)
+        .edgesIgnoringSafeArea(.top)
         .accentColor(Color.primary)
+        .onAppear {
+            let tabBarAppearance = UITabBarAppearance()
+            tabBarAppearance.configureWithDefaultBackground()
+                            UITabBar.appearance().scrollEdgeAppearance = tabBarAppearance
+        }
     }
     
 }

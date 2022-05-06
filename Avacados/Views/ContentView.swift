@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     var headers: [Header] = Header.getAllHeaders()
+    var facts: [Fact] = Fact.getAllFacts()
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
             VStack(alignment: .center, spacing: 20) {
@@ -26,6 +27,21 @@ struct ContentView: View {
                 //MARK: - DISHES
                 DishesView()
                     .frame(maxWidth: 640)
+                
+                //MARK: - FACTS VIEW
+                Text("Avocado Facts")
+                    .fontWeight(.bold)
+                    .modifier(TitleModifier())
+                ScrollView(.horizontal, showsIndicators: false) {
+                    HStack(alignment: .top, spacing: 60) {
+                        ForEach(facts) { fact in
+                            FactsView(fact: fact)
+                        }
+                    }
+                    .padding(.vertical)
+                    .padding(.leading,55)
+                    .padding(.trailing, 20)
+                }
                 VStack(alignment: .center, spacing: 20) {
                     Text("All about Avocado")
                         .fontWeight(.bold)

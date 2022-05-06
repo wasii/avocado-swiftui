@@ -10,6 +10,7 @@ import SwiftUI
 struct ContentView: View {
     var headers: [Header] = Header.getAllHeaders()
     var facts: [Fact] = Fact.getAllFacts()
+    var recipes: [Recipe] = Recipe.allRecipes()
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
             VStack(alignment: .center, spacing: 20) {
@@ -42,6 +43,18 @@ struct ContentView: View {
                     .padding(.leading,55)
                     .padding(.trailing, 20)
                 }
+                //MARK: - RECIPE
+                Text("Avocado Recipes")
+                    .fontWeight(.bold)
+                    .modifier(TitleModifier())
+                
+                VStack(alignment: .center, spacing: 20) {
+                    ForEach(recipes) { recipe in
+                        RecipeCardView(recipe: recipe)
+                    }
+                }
+                .padding()
+                //MARK: - FOOTER
                 VStack(alignment: .center, spacing: 20) {
                     Text("All about Avocado")
                         .fontWeight(.bold)
